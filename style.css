@@ -1,0 +1,185 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        background-color: #4CAF50;
+        color: white;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #customer-form {
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+    }
+    
+    #customer-form label {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    #customer-form input[type="text"] {
+        border: none;
+        border-bottom: 2px solid #4CAF50;
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #customer-form input[type="number"] {
+            border: none;
+            border-bottom: 2px solid #4CAF50;
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+    }
+    
+    #customer-form input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+    
+    #button-container {
+        display:flex; 
+        justify-content:center; 
+        gap:10px; 
+        margin-top:20px
+    }
+
+    #button-container button:hover {
+        background-color: #3e8e41;
+        color: aliceblue;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        
+    }       
+    
+    #button-container button{
+        background-color:#4CAF50; 
+        color:white; 
+        border:none; 
+        padding:12px 20px; 
+        cursor:pointer
+    }
+    
+    #customer-form input[type="submit"] {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 1.2rem;
+        padding: 12px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+       
+       #customer-form input[type="submit"]:hover {
+        background-color: #3e8e41;
+        color: aliceblue;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }         
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #customer-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin: 3px auto;
+        width: 80%;
+    }
+    
+    #customer-form {
+        flex-basis: 45%;
+        margin-left: -110px;
+        margin-right: -100px;
+    }
+    
+    #customers-table {
+        flex-basis: 45%;
+        max-height: 400px;
+        min-height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-left: -210px;
+        border: 2px solid #000000;
+        padding: 20px;
+    }   
+
+    #customers-table table {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+        body {
+         font-size: 16px;
+        }
+       
+        h1 {
+         font-size: 24px;
+        }
+       
+        #customer-form {
+         width: 100%;
+        }
+       
+        #customer-form label {
+         font-size: 18px;
+        }
+       
+        #customer-form input[type="text"],
+        #customer-form input[type="number"] {
+         font-size: 18px;
+        }
+       
+        #customer-form input[type="submit"] {
+         font-size: 18px;
+        }
+       
+        #button-container button {
+         font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+         flex-direction: column;
+        }
+       
+        #customer-form {
+         width: 100%;
+         margin: 0;
+        }
+       
+        #customers-table {
+         width: 100%;
+         margin: 0;
+         margin-top: 20px;
+         margin-left: -15px;
+        }
+    }       
+       
